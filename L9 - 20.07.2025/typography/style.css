@@ -1,0 +1,22 @@
+html {
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    /* בוצע שינוי בברירת המחדל */
+    font-size: 10px;
+    /* 1rem = 10px */
+    /* 2.2rem = 22px */
+}
+
+
+h1 {}
+
+p {
+    font-size: 1.6rem;
+}
+
+div {
+    width: 25.4rem;
+    height: 23rem;/* 23rem * 10px = 230px */
+    border: 0.2rem solid black;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שדות בחירה</title>
+</head>
+
+<body>
+    <form>
+        <!-- Required Field - שדה חובה -->
+        <label for="">שם כלשהו</label>
+        <input type="text" name="name" required>
+        <br>
+        <!-- Min Length - אורך מינימלי -->
+        <label for="">סיסמא דוגמא</label>
+        <input type="password" name="password" minlength="6" required>
+        <br>
+        <!-- Pattern - תבנית מותאמת -->
+        <label for="">טלפון</label>
+        <input type="tel" name="phone" pattern="05[0-8]-?[0-9]{7}" title="050-1234567: דוגמא" placeholder="050-1234567">
+        <br>
+
+        <button type="submit">שלח טופס</button>
+    </form>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

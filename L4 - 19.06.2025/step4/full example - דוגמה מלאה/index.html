@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צרו קשר - Seo Expert</title>
+</head>
+
+<body>
+    <h1>צרו קשר</h1>
+    <p>מוכנים לקחת את העסק שלכם לשלב הבא? בואו נתחיל לדבר!</p>
+
+    <form action="send-contact.php" method="post">
+        <!-- פרטים אישיים -->
+        <fieldset>
+            <legend>פרטים אישיים</legend>
+            <label for="name">שם מלא:</label>
+            <input type="text" id="name" required placeholder="דוגמא: יוסי מזרחי">
+            <br>
+            <label for="email">כתובת מייל:</label>
+            <input type="email" id="email" required autocomplete="email" placeholder="yosi@example.com">
+            <br>
+            <label for="phone">טלפון:</label>
+            <input type="tel" id="phone" required pattern="[0-9]{3}-?[0-9]{7}" title="050-1234567 דוגמא:">
+            <br>
+            <label for="company">שם החברה:</label>
+            <input type="text" id="company" required placeholder="החברה שלכם">
+        </fieldset>
+
+        <fieldset>
+            <legend>פרטי הפרויקט:</legend>
+
+            <label for="project-type">סוג הפרויקט:</label>
+            <select name="project-type" id="project-type" required>
+                <option value="website">אתר אינטרנט</option>
+                <option value="mobile app">אפליקציית מובייל</option>
+                <option value="web app">אתר אפליקציה</option>
+                <option value="e-commerce">חנות דיגיטלית</option>
+                <option value="other">אחר</option>
+            </select>
+            <br>
+            <label for="budget">תקציב:</label>
+            <input type="range" id="budget" name="budget" min="5000" max="100000" step="5000" value="17500"><span>25,000</span>
+            <br>
+            <label for="timeline">דחיפות פרויקט?</label>
+            <input type="date" id="timeline" name="timeline">
+        </fieldset>
+
+        <button type="submit">send</button>
+        <input type="submit" value="שלח">
+    </form>
+
+    <script>
+        const budgetSlider = document.getElementById("budget")
+        const budgetDisplay = budgetSlider.nextElementSibling;
+
+        budgetSlider.addEventListener("input", (e) => {
+            budgetDisplay.textContent = `₪ ${parseInt(e.target.value)}`
+        })
+    </script>
+</body>
+
+</html>

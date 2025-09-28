@@ -1,0 +1,19 @@
+{
+  "weather": [
+    {
+      "id": "1",
+      "city": "Tel Aviv",
+      "temp": 30
+    },
+    {
+      "id": "2",
+      "city": "Jerusalem",
+      "temp": 25
+    },
+    {
+      "id": "3",
+      "city": "Haifa",
+      "temp": 28
+    }
+  ]
+}

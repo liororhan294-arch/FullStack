@@ -1,0 +1,18 @@
+h3 {
+    display: inline;
+    background-color: black;
+    color: yellow;
+    font-size: 40px;
+}
+
+/* מחלקה ספציפית */
+.third_headline {
+    background-color: blue;
+    color: white;
+}
+
+/* מזהה ייחודי */
+#third_headline {
+    background-color: aqua;
+    color: black;
+}

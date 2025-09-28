@@ -1,0 +1,33 @@
+/* all elements */
+/* :: - pseudo element */
+/* : - pseudo class */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* למנוע מהתוכן של האלמנט להשתלט עליו */
+    box-sizing: border-box;
+}
+
+section {
+    background-color: #e35f28;
+    color: black;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+section .para_2 {
+    color: blueviolet;
+}
+
+.section_a {
+    background-color: #f5956c;
+}
+
+/* Hover Effect - Pseudo Class */
+.section_a:hover {
+    background-color: #0a0a0a;
+    color: white;
+}

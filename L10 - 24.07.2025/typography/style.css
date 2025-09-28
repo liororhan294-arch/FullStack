@@ -1,0 +1,123 @@
+html {
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    /* בוצע שינוי בברירת המחדל */
+    font-size: 10px;
+    /* 1rem = 10px */
+    /* 10rem = 10px * 10 = 100px */
+    /* 2.2rem = 22px */
+    position: relative;
+}
+
+h1 {
+    letter-spacing: 6px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    font-size: 3rem;
+    /* 30px */
+}
+
+p {
+    font-size: 1.6rem;
+    /* 16px */
+    /* word-spacing: 56px; */
+    letter-spacing: 7px;
+    line-height: 1.4;
+    font-style: italic;
+    color: blue;
+    /* BLUE */
+    color: #0000ff;
+    color: rgb(0, 0, 255);
+    /* RED */
+    color: #ff0000;
+    color: rgb(255, 0, 0);
+    /* GREEN */
+    color: #00ff00;
+    color: rgb(0, 255, 0);
+    /* WHITE */
+    color: #ffffff;
+    color: rgb(255, 255, 255);
+    /* BLACK */
+    color: #000000;
+    color: rgb(0, 0, 0);
+    /* purple */
+    color: #86009e;
+    color: #000000;
+    /* purple */
+    color: #eee;
+    color: #f9ead6;
+    color: #8963BA;
+    /* color: #2f2f2f; */
+}
+
+div {
+    width: 25.4rem;
+    height: 23rem;
+    /* 23rem * 10px = 230px */
+    border: 0.2rem solid black;
+    background-color: antiquewhite;
+}
+
+.main_container {
+    font-size: 16px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.container_box {
+    /* font-size: 16px; */
+    font-size: 2rem;
+    /* 1rem = 10px, 2rem = 20 */
+
+}
+
+.para {
+    /* font-size: 1rem;1rem = 10px */
+    font-size: 1em;
+    /* 1em = 16px */
+}
+
+.image_container {
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+    width: 60rem;
+    height: 40rem;
+    background-image: url(./background-image.jpg);
+    /* background-image: url(https://t4.ftcdn.net/jpg/04/95/44/17/240_F_495441747_TIczT7j2KcE5kfZbWWgufjjur3nufmOR.jpg); */
+    background-size: auto;
+    background-position: right top;
+    background-image: linear-gradient(to right, #86009e, #00ff00);
+    background-image: radial-gradient(circle, #86009e, #00ff00);
+    /* for animation - עבור האנימציה */
+    position: absolute;
+    transform: translateY(0);
+    animation: move 5s 1 ease;
+}
+
+/* animation definition */
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* @keyframes move2 {
+    from {
+
+    }
+
+    to {
+
+    }
+} */

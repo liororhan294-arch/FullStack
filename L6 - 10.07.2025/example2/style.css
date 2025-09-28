@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    color: green;
+}
+
+h2 {
+    color: blue;
+}
+
+.card {
+    /* שלושת המאפיינים במאפיין אחד */
+    border: 1px solid #ccc;
+    /* העובי של הגבול */
+    border-width: 1px;
+    /* העיצוב של הגבול */
+    border-style: solid;
+    /* צבע הגבול */
+    border-color: #ccc;
+    /* מרווח פנימי בתוך האלמנט */
+    /* מחליט שהמרווח מכל הצדדים הפנימי יהיה זהה */
+    /* padding: 15px; */
+    /* padding: 10px 20px 30px 40px; */
+    padding: 15px 20px;
+    margin: 10px;
+    margin: 10px 20px;
+    margin: 10px 20px 30px 40px;
+    /* Hex Color */
+    background-color: #e2e0ec;
+    color: purple;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.201);
+}
+
+.card h2 {
+    color: red;
+}
+
+.dark {
+    background-color: #000;
+    color: white;
+    /* r - red, g - green, b - blue */
+    /* color: rgba(0, 0, 255, 0.5); */
+}
+
+.dark h2 {
+    color: yellow;
+}

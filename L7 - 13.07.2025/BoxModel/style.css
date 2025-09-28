@@ -1,0 +1,23 @@
+/* כל האלמנטים */
+/* All(*) */
+* {
+    /* Default */
+    box-sizing: content-box;
+    /* Run over the default */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    background-color: aliceblue;
+    border: 1px solid orange;
+    padding: 20px;
+    margin: 10px;
+    /* box-sizing: border-box; */
+}

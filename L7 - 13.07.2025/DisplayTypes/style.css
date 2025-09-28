@@ -1,0 +1,22 @@
+h1 {
+    background-color: aquamarine;
+}
+
+p {
+    background-color: blue;
+}
+
+strong {
+    background-color: black;
+    color: white;
+}
+
+a {
+    background-color: green;
+    color: white;
+}
+
+button {
+    min-width: 115px;
+    display: block;
+}

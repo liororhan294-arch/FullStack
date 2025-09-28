@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שדות בחירה</title>
+</head>
+
+<body>
+    <form>
+        <!-- Radio buttons -->
+        <fieldset>
+            <legend>
+                בחירת מגדר
+            </legend>
+            <label for="male">זכר</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="female">אישה</label>
+            <input type="radio" id="female" name="gender" value="female">
+
+            <label for="transgender">טרנסג'נדר</label>
+            <input type="radio" id="transgender" name="gender" value="transgender">
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                סוג חבילה
+            </legend>
+            <label for="basic">בסיסי - 49שח לחודש</label>
+            <input type="radio" id="basic" name="package" value="basic" checked>
+            <br>
+            <label for="premium">מתקדם - 200 שח לחודש</label>
+            <input type="radio" id="premium" name="package" value="premium">
+            <br>
+            <label for="enterprise">לארגונים - החל מ- 500 שח לחודש</label>
+            <input type="radio" id="enterprise" name="package" value="enterprise">
+        </fieldset>
+
+        <!-- Checkbox Multi Selection -->
+        <fieldset>
+            <legend>
+                שירותים נוספים:
+            </legend>
+            <label for="backup">שחזור וגיבוי</label>
+            <input type="checkbox" id="backup" name="services" value="backup">
+            <br>
+            <label for="support">תמיכה</label>
+            <input type="checkbox" id="support" name="services" value="support">
+            <br>
+            <label for="analytics">אנלטיקה</label>
+            <input type="checkbox" id="analytics" name="services" value="analytics">
+            <br>
+        </fieldset>
+        <br>
+        <!-- <input type="text" required minlength="2"> -->
+        <br>
+        <!-- Opened List(Dropdown) -->
+        <label for="city">עיר:</label>
+        <select name="city" id="city">
+            <!-- <option value="">בחרו עיר מהרשימה</option> -->
+            <option value="haifa">חיפה</option>
+            <option value="jerusalem">ירושלים</option>
+            <option value="beer-sheva">באר שבע</option>
+            <option value="tel-aviv">תל אביב</option>
+        </select>
+        <br>
+        <br>
+        <label for="message">הודעה ארוכה:</label>
+        <textarea name="message" id="message" placeholder="כתבו הודעה ארוכה.." cols="10" rows="10" minlength="20" maxlength="100"></textarea>
+        <br>
+        <label for="search">חיפוש</label>
+        <input type="search" id="search" name="search" placeholder="חפש משהו...">
+        <br>
+
+        <button type="submit">שלח טופס</button>
+    </form>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
